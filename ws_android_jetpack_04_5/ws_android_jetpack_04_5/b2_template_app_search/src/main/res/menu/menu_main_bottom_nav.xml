@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_main_btm_nav_home"
+        android:checkable="true"
+        android:enabled="true"
+        android:icon="@drawable/ic_total_view_unselected"
+        android:title="@string/main_btm_nav_home_title"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_main_btm_nav_my_page"
+        android:enabled="true"
+        android:icon="@drawable/ic_setting_view_unselected"
+        android:title="@string/main_btm_nav_my_page_title"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_main_btm_nav_search"
+        android:enabled="true"
+        android:icon="@drawable/ic_search"
+        android:title="@string/main_btm_nav_search_title"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_main_btm_nav_board"
+        android:enabled="true"
+        android:icon="@drawable/ic_board_list"
+        android:title="게시판"
+        app:showAsAction="always" />
+</menu>

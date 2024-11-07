@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Template" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <!-- main activity에 이 theme을 지정한다. parent를 SplashScreen으로 지정. -->
+    <style name="Theme.Template.Starting" parent="Theme.SplashScreen">
+        <!-- Splash 화면 배경 색상 -->
+        <item name="windowSplashScreenBackground" tools:targetApi="S">@color/whiteForBackground</item>
+        <!-- Splash 화면 중앙에 위치할 Drawable -->
+        <item name="windowSplashScreenAnimatedIcon" tools:targetApi="S">@drawable/ssafy_logo</item>
+        <!-- Splash 화면 아이콘 주변 Background Color -->
+        <item name="windowSplashScreenIconBackgroundColor" tools:targetApi="S">@color/whiteForBackground</item>
+
+        <!--  spash가 보이고 나서 이동하면, postSplashScreenTheme에 지정된 theme이 적용된다. -->
+        <item name="postSplashScreenTheme">@style/Theme.Template</item>
+
+    </style>
+
+</resources>
